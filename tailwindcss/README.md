@@ -17,6 +17,8 @@ npx tailwindcss init
 ```
 
 This command creates a tailwind.config.js file at your project root. In this file, you can customize your installation.
+This file is your configuration file for Tailwind CSS. It's where you can customize various aspects of your Tailwind
+setup. It is created by running the command npx tailwindcss init.
 
 ```js
 module.exports = {
@@ -32,9 +34,16 @@ module.exports = {
 
 **3. Create a PostCSS configuration**
 
+PostCSS is a tool for transforming styles with JavaScript plugins. These plugins can transform styles in various
+ways, like adding vendor prefixes to CSS properties using Autoprefixer or transpile future CSS syntax, inline
+images, and more.
+
 ```shell
 touch postcss.config.js
 ```
+
+When you're using Tailwind CSS with PostCSS, postcss.config.js is the configuration file for PostCSS. The configuration
+for PostCSS is actually pretty simple when you're using it with Tailwind CSS.
 
 Edit the `postcss.config.js` file to look like this:
 
@@ -46,6 +55,17 @@ module.exports = {
   },
 };
 ```
+
+- `plugins`: This is an object where each key-value pair represents a PostCSS plugin that you want to use. The key is
+  the name of the plugin and the value is the configuration for that plugin.
+- `tailwindcss`: This is the Tailwind CSS plugin. We're passing an empty object as the configuration, which means we
+  want to use the default configuration.
+- `autoprefixer`: This plugin adds vendor prefixes to CSS rules, to ensure compatibility across different browsers.
+  Again, we're using the default configuration by passing in an empty object.
+
+The postcss.config.js file is used to determine which plugins to use during the CSS transformation process. The order
+of plugins is important. They are run in the order they are defined in the plugins object. In this case, first, the
+Tailwind CSS plugin is run, and then the Autoprefixer plugin.
 
 **4. Generate Tailwind CSS styles**
 
