@@ -1,107 +1,70 @@
-# React tutorial
+# Getting Started with Create React App
 
-This repository is Complete understating of my personal experience.
-In this ReadMe.md file you can read about simplified my version of React.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-| Title           | Value             |
-| --------------- | ----------------- |
-| @author:        | Dashpuntsag Oidov |
-| @react version: | 18.0.3            |
-| @createdDate:   | 2022-Nov-10       |
-| @updatedDate:   | 2022-Nov-25       |
+## Available Scripts
 
-## What is React.js ?
+In the project directory, you can run:
 
-React.Js is a declarative, efficient and flexible Javascipt library for frontend development. In 2010s and 2020s MVC architectural pattern is most commonly used. React.js is only responsible for view layer.
+### `npm start`
 
-React.js library is designs simple view for each state in your application, and It will efficiently update and render just the right component when your data is changed.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Folder & file structure explained
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-When working on large projects, structuring your code by categorizing and naming them properly is crucial. This section aims to provide you with a brief explanation of the best approach to follow when organizing your React.js project. Here's a basic explanation of a typical React folder and file structure:
+### `npm test`
 
-```
-|-- public
-|-- src/
-├── components/
-│ ├── ComponentA/
-│ │ ├── ComponentA.js
-│ │ ├── ComponentA.css
-│ │ └── ComponentA.test.js
-│ ├── ComponentB/
-│ │ ├── ComponentB.js
-│ │ ├── ComponentB.css
-│ │ └── ComponentB.test.js
-│ └── index.js
-├── pages/
-│ ├── PageA/
-│ │ ├── PageA.js
-│ │ ├── PageA.css
-│ │ └── PageA.test.js
-│ ├── PageB/
-│ │ ├── PageB.js
-│ │ ├── PageB.css
-│ │ └── PageB.test.js
-│ └── index.js
-├── utils/
-│ ├── helperFunctions.js
-│ ├── api.js
-│ └── constants.js
-├── App.js
-├── index.js
-├── index.css
-└── serviceWorker.js
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **public folder**: Here is where all the static assets that are used by the appication such as images, fonts and HTML files. The content of `public` folder are not processed by the build tools, but instead are directly coppied into the build folder during the build process. `public` folder usually contains following files:
+### `npm run build`
 
-  - `index.html` - file which is the main HTML file that serves as the entry point for the React application. It contains a div element with an id of root, which is where your React components will be rendered.
-  - favicon.ico - This is the icon that appears in the browser tab when your application is open
-  - Other static assets such as images, fonts, and videos that your application uses
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- **src folder:** The `src` folder contains all the source code that the project has including React components, JavaScript files, and CSS files. Here's an overview of what `src` folder contains
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-  - `index.js` - This is the main entry of your project. It renders the root React component to the DOM and initializes any other necessary code.
-  - `App.js` - This is the main React component of the project. It defines the overall structure of your application and ats as a container for the other components.
-  - `components` folder - Contains other components that needed for the project
-  - Other JS files that your application uses.
-  - CSS files
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- **package.json:** This file is a metadata that contains information about your project, such as its name, version, dependencies and scripts.
+### `npm run eject`
 
-Also there are other optional files and folders. But these are the main and most required files & folders that React applications must have.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## How React.js works
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-React.js library works by using virtual DOM, components, and a unidirectional data flow to create efficient and scalable user interfaces.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1. Components:
-2. JSX sytnax:
-3. Virtual DOM:
-4. Unidirectional data flow:
-5. State management:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Run the project
+## Learn More
 
-To install node packages:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-```
-    npm install
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Simply run following command:
+### Code Splitting
 
-```
-    npm run dev
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Experience
+### Analyzing the Bundle Size
 
-### Setting up tailwindcss into your react.js project
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Swiper in react
+### Making a Progressive Web App
 
-Swiper is one of the most simle yet most useful feature of a web application. There are many ways to implement swiper in web and one of those ways is using react/swiper library
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- documentation: <https://swiperjs.com/react#what-next>
-- demo/sandbox: <https://swiperjs.com/demos>
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
