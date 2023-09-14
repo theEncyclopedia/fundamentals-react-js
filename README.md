@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Fundamentals of React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React,js, often simply called React, is a JavaSript library for building user interfaces, particularly interactive web applications that can be updated without reloading the entire page. React is based on the concept of components, which are reusable pieces oce that can be combined to create complex interfaces.
 
-## Available Scripts
+## Key features
 
-In the project directory, you can run:
+- **Components:** React is based on the concept of components, which are reusable pieces of code that can be combined to create complex interfaces. This makes it easy to create maintainbale and scalable code.
+- **VirtualDOM:** One of React's notable features is its use of a virtual DOM. This is an in-memory data strucutre that React uses to keep track of changes to the actual DOM. Whenever a change occurs, React updates the virtual DOM first and then compares it with the previous version to figure out the most efficient way to update the actual DOM, leading to improved performance.
+- **Declarative:** React allows developers to describe what the UI should look like, not how it should get to a particular state. This makes the code more readable and easier to debug, as React takes care of updating the UI to matching the current state.
+- **JSX**: JSX (JavaScript XML) is a syntax extension for JavaScript often used with React to describe what the UI should look like. Although it is not necessary to use JSX with React, it is widely adopted as it makes it easier to write React components.
+- **Uni-directional data flow:** Data in React flows in a single direction, from parent components down to child components through props (short for "properties"). This makes it easier to track the flow of data and debug the application.
+- **Hooks:** Introduced in React 16.8, Hooks are functions that allow you to use state and lifecycle features in functional components, without having to convert them into class components.
 
-### `npm start`
+## Benefits of using
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Typical use cases:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Single Page Application(SPA)
+- Mobile applications (via React Native)
+- Progressive web application (PWA)
+- Web-based interactive dashboards
+- Real-time data visualization apps
