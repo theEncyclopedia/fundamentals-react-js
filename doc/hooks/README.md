@@ -56,8 +56,7 @@ The reconciliation algorithm is the process React uses to update the DOM in resp
 The reconciliation algorithm starts by comparing the virtual DOM of the previous state with the virtual DOM of the new state. If there are no differences, React will not make any changes to the real DOM. If there are differences, React will update the real DOM to match the new state.
 
 ### Conclusion
-
-- Use a state variable when a component needs to "remember" some information between renders
+- Use a state variable when a component needs to "remember" some information between multiple renders or something that triggers re-rendering.
 
 ## Context Hooks
 
