@@ -11,9 +11,9 @@ depending on its position relative to the viewport.
 
 ## Features
 
-1.  Vertical Timeline: Lists items in a vertical timeline format.
-2.  Scroll-Based Activation: Changes the active status of items based on the user's scroll position.
-3.  At Least One Active Item: Enforces a rule that at least one item is active at any given point in time.
+1. Vertical Timeline: Lists items in a vertical timeline format.
+2. Scroll-Based Activation: Changes the active status of items based on the user's scroll position.
+3. At Least One Active Item: Enforces a rule that at least one item is active at any given point in time.
 
 ## Steps to implement
 
@@ -22,7 +22,9 @@ depending on its position relative to the viewport.
 1.1 **State for Active Item** use `useState()` to create state variable called `activeItems` that holds an array indicating the active status for each item.
 
 ```jsx
-const [activeItems, setActiveItems] = useState(new Array(items.length).fill(false));
+const [activeItems, setActiveItems] = useState(
+  new Array(items.length).fill(false)
+);
 ```
 
 1.2 Add `handleScroll` function that listens to the scroll events and updates `activeItems`.
