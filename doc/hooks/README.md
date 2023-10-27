@@ -1,6 +1,6 @@
 # Built-in React Hooks
 
-Hooks let you use different React Fatures from your components. You can either use the built-in Hooks or combine them to build your own.
+Hooks let you use different React Features from your components. You can either use the built-in Hooks or combine them to build your own.
 
 In the context of React.js, a hook is a special function that allows you to use state and other React features in a functional componentsm wihtout having to write class component. Hooks were introduced in React 16.8 to make it easier to reuse state logic and side effects amoung compen
 
@@ -56,6 +56,7 @@ The reconciliation algorithm is the process React uses to update the DOM in resp
 The reconciliation algorithm starts by comparing the virtual DOM of the previous state with the virtual DOM of the new state. If there are no differences, React will not make any changes to the real DOM. If there are differences, React will update the real DOM to match the new state.
 
 ### Conclusion
+
 - Use a state variable when a component needs to "remember" some information between multiple renders or something that triggers re-rendering.
 
 ## Context Hooks
