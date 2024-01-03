@@ -29,4 +29,4 @@ The difference between a hook and a function in React (and in general programmin
 - **Usage**:
 - **Example**:
 - **Lifecycle Integration**:
-- **Naming convention**:
+- **Naming convention**: Any hook name in React must start with a prefix `use`.
