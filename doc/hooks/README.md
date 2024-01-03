@@ -16,16 +16,16 @@ The difference between a hook and a function in React (and in general programmin
 
 ```javascript
   function myFunction() {
-    .....
+    ...
   }
 ```
 
-- **Flexibility**:
-- **Naming convention**:
+- **Flexibility**: Functions are more flexible and are not specifically tied to any framework or library. unless they are explicitly designed to interact with them.
+- **Naming convention**: Functions can have any name.
 
 ### React Hooks
 
-- **Purpose**:
+- **Purpose**: Hooks are a feature specific to React that allow you to use state and other React features in functional components. They are used to "hook into" React's state and lifecycle features.
 - **Usage**:
 - **Example**:
 - **Lifecycle Integration**:
