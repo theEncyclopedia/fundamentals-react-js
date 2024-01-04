@@ -28,5 +28,5 @@ The difference between a hook and a function in React (and in general programmin
 - **Purpose**: Hooks are a feature specific to React that allow you to use state and other React features in functional components. They are used to "hook into" React's state and lifecycle features.
 - **Usage**:
 - **Example**:
-- **Lifecycle Integration**:
+- **Lifecycle Integration**: Something
 - **Naming convention**: Any hook name in React must start with a prefix `use`.
