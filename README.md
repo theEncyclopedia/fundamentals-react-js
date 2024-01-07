@@ -13,7 +13,7 @@ React,js, often simply called React, is a JavaSript library for building user in
 
 ## Benefits of using
 
-## Typical use cases:
+## Typical use cases
 
 - Single Page Application(SPA)
 - Mobile applications (via React Native)
