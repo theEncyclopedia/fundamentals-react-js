@@ -56,11 +56,23 @@ function Toolbar() {
 
 4.Updating Context Values: Context values can be updated using state or props in the component that renders the Provider. All consumers that are descendants of the Provider will re-render when the context value changes.
 
-```javascript
-
-```
-
 It's important to note that while Context is a powerful tool, it should be used sparingly as it can make component reusability more difficult and can lead to over-rendering issues if not managed properly. For many applications, state management libraries like Redux or MobX might be a more appropriate choice for managing global state.
+
+You can provide the initial state directly in createContext, but it should be done with an understanding of how it affects your component's behavior. When you provide an initial state, any component using this context outside of a TodoProvider will receive this initial state instead of undefined.
+
+This might seem like a good idea, as it can prevent the need for null checks, but it can potentially lead to bugs that are hard to detect. A component might incorrectly assume it's within a properly configured provider and try to operate on this initial state, leading to unexpected behavior.
+
+## Advanced example
+
+Creating an advanced example using React Context involves more complex scenarios, such as dynamically updating context values based on user input, and integrating context with other React features like reducers or side effects.
+
+### Todo app in (example-app)
+
+- TodoContext: This is the context we created. It holds the state of our to-do list and a dispatch method to update the state.
+- TodoProvider Component: This component uses useReducer to manage the state of our to-dos and provides the state and dispatch method to its children.
+- App Component: It wraps the TodoList component with TodoProvider.
+- TodoList Component: It consumes the TodoContext and displays a list of to-dos. It allows adding new to-dos.
+- TodoItem Component: It also consumes the TodoContext and allows each to-do item to be removed.
 
 ## Related Topcs
 
