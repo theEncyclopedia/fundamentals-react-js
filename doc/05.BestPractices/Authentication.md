@@ -22,7 +22,7 @@ This hook will allow us to easily store and retrieve data from localStorage.
 import { useState } from "react";
 
 export const useLocalStorage = () => {
-  const [value, setValue] = (useState < string) | (null > null);
+  const [value, setValue] = useState<string | null>(null);
   ß;
   const setItem = (key: string, value: string) => {
     localStorage.setItem(key, value);
