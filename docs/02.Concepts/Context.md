@@ -79,7 +79,7 @@ function Toolbar() {
 
 It's important to note that while Context is a powerful tool, it should be used sparingly as it can make component reusability more difficult and can lead to over-rendering issues if not managed properly. For many applications, state management libraries like Redux or MobX might be a more appropriate choice for managing global state.
 
-## Intializing context in detail
+## Initializing context in detail
 
 You can provide the initial state directly in createContext, but it should be done with an understanding of how it affects your component's behavior. When you provide an initial state, any component using this context outside of a TodoProvider will receive this initial state instead of undefined.
 
@@ -115,15 +115,10 @@ In the context of programming, "dispatch" carries a similar connotation but is a
 
 In all these cases, dispatching is about sending or directing something (an event, method call, or action) to the appropriate destination where it will be handled or processed. In programming, this concept is fundamental to organizing and managing the flow of control and data in an application.
 
-## Children charectresitic
+## Children characteristic
 
 When multiple child components within the same context are using a context value, and one of them updates the state, the behavior regarding re-rendering depends on how the context is being used and the nature of the update.
 
 1. Rerendering on State Update: When the value of a context changes (i.e., the value passed to the Provider's value prop changes), all components that are consuming this context will re-render. This is because the context value is a dependency for these components, and a change in the dependency triggers a re-render.
 
 2. Efficiency Considerations: This behavior is efficient for scenarios where multiple components need to stay synchronized with the same data. However, it can lead to performance issues if the context is large and changes frequently, as it might cause unnecessary re-renders of many components.
-
-## Related Topcs
-
-- 03.Hooks/ContextHooks.md
-- 04.Api/CreateContext
