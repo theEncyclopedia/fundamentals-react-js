@@ -2,6 +2,8 @@
 
 React,js, often simply called React, is a JavaScript library for building user interfaces, particularly interactive web applications that can be updated without reloading the entire page. React is based on the concept of components, which are reusable pieces oce that can be combined to create complex interfaces.
 
+`react` is a small JS library with `react-dom`.
+
 ## Key features
 
 - **Components:** React is based on the concept of components, which are reusable pieces of code that can be combined to create complex interfaces. This makes it easy to create maintainable and scalable code.
