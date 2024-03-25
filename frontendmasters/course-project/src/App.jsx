@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactDOM } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 const Pet = (props) => {
   const { name, type, breed } = props;
@@ -15,12 +15,12 @@ const App = () => {
   // createElement(elementType, attributeObject, children )
   return React.createElement('div', { id: 'div-id', className: '' }, [
     React.createElement('h1', {}, 'Adopt me'),
-    React.createElement(Pet, { name: 'Luna', type: 'Dog', breed: 'Havanese' }),
-    React.createElement(Pet, { name: 'Poddy', type: 'Dog', breed: 'Havanese' }),
-    React.createElement(Pet, { name: 'Quincy', type: 'Dog', breed: 'Havanese' }),
+    React.createElement(Pet, { name: 'Luna', type: 'Dog', breed: 'Havanas', key: '1' }),
+    React.createElement(Pet, { name: 'Poddy', type: 'Dog', breed: 'Golden Retriever', key: '2' }),
+    React.createElement(Pet, { name: 'Quincy', type: 'Dog', breed: 'Labrador Retriever', key: '3' }),
   ]);
 };
 
 const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
+const root = createRoot(container);
 root.render(React.createElement(App));
