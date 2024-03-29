@@ -22,3 +22,7 @@ React,js, often simply called React, is a JavaScript library for building user i
 - Progressive web application (PWA)
 - Web-based interactive dashboards
 - Real-time data visualization apps
+
+## Useful references
+
+- React docs: <https://react.dev/>
