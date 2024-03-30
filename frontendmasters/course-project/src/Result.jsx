@@ -6,7 +6,7 @@ const Result = (props) => {
   return (
     <div className="search">
       {!pets.length ? (
-        <h1>Not fount</h1>
+        <h1>Not found</h1>
       ) : (
         pets.map((pet) => (
           <Pet
