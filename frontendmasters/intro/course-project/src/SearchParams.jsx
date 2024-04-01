@@ -14,6 +14,7 @@ const SearchParams = () => {
     breed: '',
   });
 
+  // eslint-disable-next-line no-unused-vars
   const [adoptedPet, _] = useContext(AdoptedPetContext);
   const [animal, setAnimal] = useState('');
   const [breedList] = useBreedList(animal);
