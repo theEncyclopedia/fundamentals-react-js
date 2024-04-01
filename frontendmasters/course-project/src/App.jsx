@@ -1,9 +1,10 @@
 import { createRoot } from 'react-dom/client';
-import { StrictMode } from 'react';
+import { StrictMode, useState } from 'react';
 import SearchParams from './SearchParams';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import DetailsErrorBoundary from './Details';
+import AdoptedPetContext from './AdoptedPet';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -15,18 +16,22 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
+  const adoptedPet = useState(null);
+
   return (
     <StrictMode>
       <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
-          <header>
-            <Link to="/">Adopt me</Link>
-          </header>
-          <Routes>
-            <Route path="/" element={<SearchParams />} />
-            <Route path="/details/:id" element={<DetailsErrorBoundary />} />
-          </Routes>
-        </BrowserRouter>
+        <AdoptedPetContext.Provider value={adoptedPet}>
+          <BrowserRouter>
+            <header>
+              <Link to="/">Adopt me</Link>
+            </header>
+            <Routes>
+              <Route path="/" element={<SearchParams />} />
+              <Route path="/details/:id" element={<DetailsErrorBoundary />} />
+            </Routes>
+          </BrowserRouter>
+        </AdoptedPetContext.Provider>
       </QueryClientProvider>
     </StrictMode>
   );
