@@ -1,11 +1,7 @@
+import { UseRef } from './pages/hooks';
 
 function App() {
-
-  return (
-    <div>
-      hello
-    </div>
-  )
+  return <UseRef />;
 }
 
-export default App
+export default App;
