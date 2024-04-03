@@ -10,7 +10,11 @@ const UseRef = () => {
     alert('You clicked ' + ref.current + ' times!');
   }
 
-  return <button onClick={handleClick}>Click me!</button>;
+  return (
+    <section className="bg-red-50">
+      <button onClick={handleClick}>Click me!</button>
+    </section>
+  );
 };
 
 export default UseRef;
