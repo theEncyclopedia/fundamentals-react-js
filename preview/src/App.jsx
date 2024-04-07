@@ -2,6 +2,7 @@ import Home from './pages/Home';
 import { UseEffect, UseRef } from './pages/hooks';
 import { Route, Routes } from 'react-router-dom';
 import { NotFound } from './pages/other';
+import TicTacToe from './pages/other/TicTacToe';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/use-ref" element={<UseRef />} />
         <Route path="/use-effect" element={<UseEffect />} />
+        <Route path="/tic-tac-toe" element={<TicTacToe />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
