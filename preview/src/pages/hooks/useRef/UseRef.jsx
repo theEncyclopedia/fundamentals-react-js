@@ -12,6 +12,7 @@ const UseRef = () => {
 
   return (
     <section className="bg-red-50">
+      <h3>UseRef does not trigger a re-render</h3>
       <button onClick={handleClick}>Click me!</button>
     </section>
   );

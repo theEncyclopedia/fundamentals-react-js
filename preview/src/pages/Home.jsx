@@ -5,7 +5,7 @@ const Home = () => {
     'flex items-center justify-center | py-8 | rounded-lg border border-red-400 | hover:-translate-y-1 duration-200';
 
   return (
-    <div className="grid grid-cols-4 gap-8">
+    <div className="container mx-auto grid grid-cols-4 gap-4">
       <Link to={'/use-effect'} className={mainClassName}>
         useEffect()
       </Link>

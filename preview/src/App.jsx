@@ -2,7 +2,7 @@ import Home from './pages/Home';
 import { UseEffect, UseRef } from './pages/hooks';
 import { Route, Routes } from 'react-router-dom';
 import { NotFound } from './pages/other';
-import TicTacToe from './pages/other/TicTacToe';
+import { TicTacToe } from './pages/tictactoe';
 
 function App() {
   return (
