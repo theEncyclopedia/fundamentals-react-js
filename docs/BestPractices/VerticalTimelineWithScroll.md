@@ -30,7 +30,7 @@ const [activeItems, setActiveItems] = useState(
 1.2 Add `handleScroll` function that listens to the scroll events and updates `activeItems`.
 
 First create array to store new active states. Then loop through timeline items. After that get elements position and dimensions using `useRef()` hook.
-After that check if the item is in the viewport, then update the array with new active state. After iterating through timeline items updagte the activeItems
+After that check if the item is in the viewport, then update the array with new active state. After iterating through timeline items updates the activeItems
 
 ```jsx
   const handleScroll = () => {
