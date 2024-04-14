@@ -1,6 +1,6 @@
 # Fundamentals of React.js
 
-React,js, often simply called React, is a JavaScript library for building user interfaces, particularly interactive web applications that can be updated without reloading the entire page. React is based on the concept of components, which are reusable pieces oce that can be combined to create complex interfaces.
+React.js is a JavaScript library for building user interfaces, particularly interactive web applications that can be updated without reloading the entire page. React is based on the concept of components, which are reusable pieces oce that can be combined to create complex interfaces.
 
 `react` is a small JS library with `react-dom`.
 
@@ -13,8 +13,6 @@ React,js, often simply called React, is a JavaScript library for building user i
 - **Uni-directional data flow:** Data in React flows in a single direction, from parent components down to child components through props (short for "properties"). This makes it easier to track the flow of data and debug the application.
 - **Hooks:** Introduced in React 16.8, Hooks are functions that allow you to use state and lifecycle features in functional components, without having to convert them into class components.
 
-## Benefits of using
-
 ## Typical use cases
 
 - Single Page Application(SPA)
@@ -26,3 +24,4 @@ React,js, often simply called React, is a JavaScript library for building user i
 ## Useful references
 
 - React docs: <https://react.dev/>
+- More information wikipedia: <https://en.wikipedia.org/wiki/React_(JavaScript_library)>
