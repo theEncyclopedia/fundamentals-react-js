@@ -24,12 +24,12 @@ React.js is a JavaScript library for building user interfaces, particularly inte
 ## Repository contents
 
 ```shell
--/docs
-    -/BestPractices
-    -/Concepts
--/frontendmasters
--/preview
--/udemy-course
+- /docs        
+    - /BestPractices
+    - /Concepts
+- /frontendmasters
+- /preview
+- /udemy-course
 ```
 
 ## Useful references
