@@ -1,6 +1,7 @@
 # Plain React setup
 
 To start web development with traditional way developers tends to have a 3 main files.
+
 -`index.html`
 -`style.css`
 -`main.js`
@@ -33,8 +34,23 @@ Full version of `html`
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
   <script>
     // Your code is going to go here
+    const App = () => {
+      return React.createElement(
+        "div",
+        {},
+        React.createElement("h1", {}, "Adopt Me!")
+      );
+    };
+
+    const container = document.getElementById("root");
+    const root = ReactDOM.createRoot(container);
+    root.render(React.createElement(App));
   </script>
 </body>
 
 </html>
 ```
+
+In the example above
+
+`<div id="root">not rendered</div>` is the mounting point for the React application. Initially, it contains placeholder text which will be replaced when React renders the component.
