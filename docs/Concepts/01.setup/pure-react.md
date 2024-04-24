@@ -54,3 +54,7 @@ Full version of `html`
 In the example above
 
 `<div id="root">not rendered</div>` is the mounting point for the React application. Initially, it contains placeholder text which will be replaced when React renders the component.
+
+In this setup, React elements are created using `React.createElement` instead of JSX. JSX is a syntax extension for JavaScript that looks similar to XML or HTML. To use JSX, you need a compiler like Babel to convert it into regular JavaScript, which this simple setup avoids to keep things straightforward and dependency-free.
+
+In this setup, React elements are created using React.createElement instead of JSX. JSX is a syntax extension for JavaScript that looks similar to XML or HTML. To use JSX, you need a compiler like Babel to convert it into regular JavaScript, which this simple setup avoids to keep things straightforward and dependency-free.
