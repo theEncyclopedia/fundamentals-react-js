@@ -1,5 +1,7 @@
 # Plain React setup
 
+In modern days react developers uses babel, webpack or vite with their react application. This is because these build tools gives a developer to use JSX
+
 To start web development with traditional way developers tends to have a 3 main files.
 
 -`index.html`
@@ -56,3 +58,7 @@ In the example above
 `<div id="root">not rendered</div>` is the mounting point for the React application. Initially, it contains placeholder text which will be replaced when React renders the component.
 
 In this setup, React elements are created using `React.createElement` instead of JSX. JSX is a syntax extension for JavaScript that looks similar to XML or HTML. To use JSX, you need a compiler like Babel to convert it into regular JavaScript, which this simple setup avoids to keep things straightforward and dependency-free.
+
+`ReactDOM.createRoot` is a new API as of React v18. The old `ReactDOM.render` is still available (and deprecated) but it'll render your app in "legacy" mode which won't use all the fun new features packed into React v18.
+
+## Recap
