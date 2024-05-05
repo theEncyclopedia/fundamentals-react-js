@@ -1,6 +1,6 @@
 # Plain React setup
 
-In modern days react developers uses babel, webpack or vite with their react application. This is because these build tools gives a developer to use JSX
+## Setup
 
 To start web development with traditional way developers tends to have a 3 main files.
 
@@ -15,7 +15,9 @@ To add a react into your plain project developers must add two script tag into t
 <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
 ```
 
-Full version of `html`
+## Example
+
+Here's a complete example of a simple React setup:
 
 ```html
 
@@ -53,12 +55,13 @@ Full version of `html`
 </html>
 ```
 
-In the example above
+## Key Elements in example
 
-`<div id="root">not rendered</div>` is the mounting point for the React application. Initially, it contains placeholder text which will be replaced when React renders the component.
-
-In this setup, React elements are created using `React.createElement` instead of JSX. JSX is a syntax extension for JavaScript that looks similar to XML or HTML. To use JSX, you need a compiler like Babel to convert it into regular JavaScript, which this simple setup avoids to keep things straightforward and dependency-free.
-
-`ReactDOM.createRoot` is a new API as of React v18. The old `ReactDOM.render` is still available (and deprecated) but it'll render your app in "legacy" mode which won't use all the fun new features packed into React v18.
+- `<div id="root">not rendered</div>`: This `div` is the mounting point for the React application. Initially, it contains placeholder text that will be replaced once React renders the component.
+- `React.createElement:` In this setup, React elements are created using `React.createElement` instead of JSX, the pure React way. JSX is a syntax extension for JavaScript that resembles HTML but requires a compiler (e.g., Babel) to transform it into JavaScript. Using createElement directly keeps this example straightforward and dependency-free.
+- `ReactDOM.createRoot:` Introduced in React v18, this new API replaces the older `ReactDOM.render` method. Although `ReactDOM.render` is still available, it's deprecated and doesn't support the new features introduced in React v18.
 
 ## Recap
+
+- React can be used without any build tools by including it via script tags in the HTML file.
+- As we see in the example above. React creates a object contains HTML tag's metadata with `createElement()` function. And then appends it to the `<div id="root">`.
