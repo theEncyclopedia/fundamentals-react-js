@@ -61,6 +61,10 @@ Here's a complete example of a simple React setup:
 - `React.createElement:` In this setup, React elements are created using `React.createElement` instead of JSX, the pure React way. JSX is a syntax extension for JavaScript that resembles HTML but requires a compiler (e.g., Babel) to transform it into JavaScript. Using createElement directly keeps this example straightforward and dependency-free.
 - `ReactDOM.createRoot:` Introduced in React v18, this new API replaces the older `ReactDOM.render` method. Although `ReactDOM.render` is still available, it's deprecated and doesn't support the new features introduced in React v18.
 
+## Creating `App.js`
+
+
+
 ## Recap
 
 - React can be used without any build tools by including it via script tags in the HTML file.
