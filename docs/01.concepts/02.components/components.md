@@ -63,6 +63,8 @@ export default Timer;
 - `componentDidUpdate(prevProps, prevState)`: Called after the component updates.
 - `componentWillUnmount():` Called just before the component is removed from the DOM.
 
+#### Error boundary
+
 ### Functional components
 
 Functional components were introduced as a simpler alternative to class components. They were stateless and lacked lifecycle methods, making them easier to write and understand.
