@@ -1,6 +1,4 @@
-# Boom
-
-## Fetch list pattern
+# Data caching
 
 ```js
 import { useState, useEffect } from 'react';
@@ -34,5 +32,4 @@ export default function useBreedList(animal) {
 
   return [breedList, status];
 }
-
 ```
