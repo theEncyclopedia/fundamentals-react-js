@@ -48,11 +48,21 @@ export default function useBreedList(animal) {
 
 1. **Import Hooks**: We import `useState` and `useEffect` from React to manage state and side effects within our custom hook.
 
-2. **Local Cache**:
+2. **Local Cache**: We create a `localCache` object outside of the hook to store the breed lists. This cache persists across re-renders of the component using the hook.
 
-3. **Custom Hook**:
+3. **Custom Hook `useBreedList`**:
+  
+  Parameters: The hook takes one parameter, animal, which specifies the type of animal for which to fetch the breed list.
 
-4. **useEffect**:
+  State variable:
+      - `breedList`:  Stores the list of breeds for the given animal.
+      - `status`: Represents the current status of the data fetching process (e.g., unloaded, loading, loaded).
+
+4. **useEffect**: This hook runs whenever the `animal` parameter changes.
+
+-
+
+-
 
 5. **requestBreedList Function**:
 
