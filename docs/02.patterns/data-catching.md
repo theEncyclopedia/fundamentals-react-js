@@ -1,4 +1,14 @@
-# Data caching
+# Data caching pattern
+
+Data caching is a useful pattern to improve the performance and user experience of your application by storing frequently accessed data locally. In this documentation, we will explain a data caching pattern implemented using React hooks, particularly `useState` and `useEffect`.
+
+## Example: Caching Breed List for Animals
+
+In this example, we will create a custom hook useBreedList that fetches a list of breeds based on the animal type provided. This hook will cache the data to avoid redundant network requests for the same animal type.
+
+### Code Implementation
+
+Here is the complete code for the `useBreedList` hook:
 
 ```js
 import { useState, useEffect } from 'react';
@@ -33,3 +43,50 @@ export default function useBreedList(animal) {
   return [breedList, status];
 }
 ```
+
+### Explanation
+
+1. **Import Hooks**: We import `useState` and `useEffect` from React to manage state and side effects within our custom hook.
+
+2. **Local Cache**:
+
+3. **Custom Hook**:
+
+4. **useEffect**:
+
+5. **requestBreedList Function**:
+
+6. **Return value**
+
+### Usage
+
+To use this custom hook in a component, you can do the following:
+
+```js
+import React from 'react';
+import useBreedList from './useBreedList';
+
+function BreedSelector({ animal }) {
+  const [breedList, status] = useBreedList(animal);
+
+  return (
+    <div>
+      {status === 'loading' ? (
+        <p>Loading...</p>
+      ) : (
+        <select>
+          {breedList.map((breed) => (
+            <option key={breed} value={breed}>
+              {breed}
+            </option>
+          ))}
+        </select>
+      )}
+    </div>
+  );
+}
+
+export default BreedSelector;
+```
+
+In this example, the BreedSelector component uses the useBreedList hook to fetch and display a list of breeds for the selected animal. The component displays a loading message while the data is being fetched and renders a dropdown list of breeds once the data is available.
