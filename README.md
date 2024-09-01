@@ -30,7 +30,7 @@ React.js is a JavaScript library for building user interfaces, particularly inte
 - /udemy-course
 ```
 
-## Useful references
+## References
 
 - React docs: <https://react.dev/>
 - More information wikipedia: <https://en.wikipedia.org/wiki/React_(JavaScript_library)>
