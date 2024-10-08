@@ -11,14 +11,14 @@ reference: <https://react-v8.holt.courses/>
 - Class component
 - Error boundaries
 - Portal and refs
-- Context
+- Context hooks
 
 ## Setup commands
 
 ```shell
 npm i -D prettier
 
-npm i -D vite 
+npm i -D vite
 
 npm i react react-dom
 
