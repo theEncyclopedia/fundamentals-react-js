@@ -1,0 +1,1 @@
+"I will provide you with text (transcript, notes, etc.), and I want you to format it into a structured, documentation-like style in markdown. When generating code blocks, use -code- instead of triple backticks so I can easily copy-paste into a .md file. Make the content clear and well-organized, and let me know if any part needs clarification."
