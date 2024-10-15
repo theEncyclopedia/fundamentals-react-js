@@ -2,7 +2,7 @@
 
 I will provide you with text (transcript, notes, etc.), and I want you to format it into a structured, documentation-like style in markdown.
 
-Also please provide some deep explanation
+Also please provide some deep explanation.
 
 When generating code blocks, use -c- instead of triple backticks so I can easily copy-paste into a .md file.
 
