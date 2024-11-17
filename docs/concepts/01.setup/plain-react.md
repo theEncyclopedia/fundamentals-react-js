@@ -1,7 +1,5 @@
 # Plain React setup
 
-## Setup
-
 To start web development with traditional way developers tends to have a 3 main files.
 
 -`index.html`
@@ -22,7 +20,6 @@ Here's a complete example of a simple React setup:
 ```html
   <!DOCTYPE html>
   <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +27,6 @@ Here's a complete example of a simple React setup:
     <link rel="stylesheet" href="./style.css">
     <title>Adopt Me</title>
   </head>
-
   <body>
     <div id="root">not rendered</div>
     <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
