@@ -10,7 +10,7 @@ In this example, we will create a custom hook useBreedList that fetches a list o
 
 Here is the complete code for the `useBreedList` hook:
 
-```js
+```jsx
 import { useState, useEffect } from 'react';
 
 const localCache = {};
