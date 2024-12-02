@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import AdoptedPetContext from './AdoptedPet';
+import AdoptedPetContext from './AdoptPetContext';
 import { useQuery } from '@tanstack/react-query';
 import fetchPet from './fetchPet';
 import Carousel from './Carousel';
