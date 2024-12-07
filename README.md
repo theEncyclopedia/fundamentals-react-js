@@ -26,9 +26,8 @@ React.js is a JavaScript library for building user interfaces, particularly inte
     - /best-practices
     - /concepts
     - /utility
-- /frontendmasters
+- /frontend-masters
 - /preview
-- /udemy-course
 ```
 
 ## References
