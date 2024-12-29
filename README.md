@@ -1,37 +1,50 @@
-# Fundamentals of React
+# React + TypeScript + Vite
 
-React.js is a JavaScript library for building user interfaces, particularly interactive web applications that can be updated without reloading the entire page. React is based on the concept of components, which are reusable pieces oce that can be combined to create complex interfaces.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Key features
+Currently, two official plugins are available:
 
-- **Components:** React is based on the concept of components, which are reusable pieces of code that can be combined to create complex interfaces. This makes it easy to create maintainable and scalable code.
-- **VirtualDOM:** One of React's notable features is its use of a virtual DOM. This is an in-memory data structure that React uses to keep track of changes to the actual DOM. Whenever a change occurs, React updates the virtual DOM first and then compares it with the previous version to figure out the most efficient way to update the actual DOM, leading to improved performance.
-- **Declarative:** React allows developers to describe what the UI should look like, not how it should get to a particular state. This makes the code more readable and easier to debug, as React takes care of updating the UI to matching the current state.
-- **JSX**: JSX (JavaScript XML) is a syntax extension for JavaScript often used with React to describe what the UI should look like. Although it is not necessary to use JSX with React, it is widely adopted as it makes it easier to write React components.
-- **Uni-directional data flow:** Data in React flows in a single direction, from parent components down to child components through props (short for "properties"). This makes it easier to track the flow of data and debug the application.
-- **Hooks:** Introduced in React 16.8, Hooks are functions that allow you to use state and lifecycle features in functional components, without having to convert them into class components.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Typical use cases
+## Expanding the ESLint configuration
 
-- Single Page Application(SPA)
-- Mobile applications (via React Native)
-- Progressive web application (PWA)
-- Web-based interactive dashboards
-- Real-time data visualization apps
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## Repository contents
+- Configure the top-level `parserOptions` property like this:
 
-```shell
-- /docs        
-    - /best-practices
-    - /concepts
-    - /utility
-- /frontend-masters
-- /preview
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
-## References
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-- React docs: <https://react.dev/>
-- More information wikipedia: <https://en.wikipedia.org/wiki/React_(JavaScript_library)>
-- facebook react repository: <https://github.com/facebook/react>
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
+
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
